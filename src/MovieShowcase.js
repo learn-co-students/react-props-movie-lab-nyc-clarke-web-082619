@@ -6,6 +6,7 @@ export default class MovieShowcase extends Component {
 
   generateMovieCards = () => {
     // map over your movieData array and return the correct 
+    return ( movieData.map((item,id) => <MovieCard title={item.title} poster= {item.poster} genres= {item.genres} IMDBRating={item.IMDBRating} id={id}/>))
   }
 
   render() {
